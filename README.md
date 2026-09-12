@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="crumbled-logo.jpeg" alt="Crumbled logo" width="900">
+</p>
+
 # Crumbled
 
 Local-first cookie behaviour discovery, explicit policy evaluation, and reviewed topology verification in Rust. Crumbled runs offline without executing repository code. The core is independent of Padagonia, Brandi, and web frameworks.
