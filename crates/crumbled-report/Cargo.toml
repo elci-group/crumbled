@@ -1,0 +1,8 @@
+[package]
+name="crumbled-report"
+version.workspace=true
+edition.workspace=true
+license.workspace=true
+[dependencies]
+crumbled-core={path="../crumbled-core"}
+serde_json.workspace=true

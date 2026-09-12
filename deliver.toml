@@ -1,0 +1,37 @@
+[[file]]
+path="crates/crumbled-core/src/lib.rs"
+required=true
+forbid_regex=["TODO","unimplemented!"]
+[[file]]
+path="crates/crumbled-cli/src/main.rs"
+required=true
+forbid_regex=["TODO","unimplemented!"]
+[[file]]
+path="crates/crumbled-enforce/src/lib.rs"
+required=true
+forbid_regex=["TODO","unimplemented!"]
+[[file]]
+path="crates/crumbled-cli/tests/contract.rs"
+required=true
+[[file]]
+path="README.md"
+required=true
+require_regex=["--approve", "--apply", "does not prove runtime"]
+[[file]]
+path="docs/status.md"
+required=true
+[[command]]
+name="format"
+cmd=["cargo","fmt","--all","--","--check"]
+expect_exit=0
+timeout_secs=60
+[[command]]
+name="lint"
+cmd=["cargo","clippy","--workspace","--all-targets","--locked","--offline","--","-D","warnings"]
+expect_exit=0
+timeout_secs=120
+[[command]]
+name="workspace tests"
+cmd=["cargo","test","--workspace","--locked","--offline"]
+expect_exit=0
+timeout_secs=120

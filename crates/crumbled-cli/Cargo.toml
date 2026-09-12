@@ -1,0 +1,15 @@
+[package]
+name="crumbled"
+version.workspace=true
+edition.workspace=true
+license.workspace=true
+[[bin]]
+name="crumbled"
+path="src/main.rs"
+[dependencies]
+crumbled-core={path="../crumbled-core"}
+crumbled-discovery={path="../crumbled-discovery"}
+crumbled-policy={path="../crumbled-policy"}
+crumbled-report={path="../crumbled-report"}
+crumbled-enforce={path="../crumbled-enforce"}
+serde_json.workspace=true

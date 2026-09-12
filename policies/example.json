@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "rules": [
+    {
+      "cookie": {
+        "name": "theme",
+        "domain": null,
+        "path": "/",
+        "origin": "repository:basic.js",
+        "application": "application",
+        "attributes": { "samesite": "Lax" }
+      },
+      "category": "preferences",
+      "reason": "Example review: remembers the user's display theme; requires preferences consent"
+    }
+  ]
+}
